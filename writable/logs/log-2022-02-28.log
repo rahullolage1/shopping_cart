@@ -1,0 +1,189 @@
+CRITICAL - 2022-02-28 03:23:43 --> Undefined property: CodeIgniter\View\View::$input
+#0 E:\wamp\www\rahulworkspace\codeigniter\app\Views\add_product.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\wamp\\www\\rah...', 25, Array)
+#1 E:\wamp\www\rahulworkspace\codeigniter\system\View\View.php(210): include('E:\\wamp\\www\\rah...')
+#2 E:\wamp\www\rahulworkspace\codeigniter\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\wamp\www\rahulworkspace\codeigniter\system\Common.php(1089): CodeIgniter\View\View->render('add_product', Array, true)
+#4 E:\wamp\www\rahulworkspace\codeigniter\app\Controllers\Product.php(26): view('add_product')
+#5 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(825): App\Controllers\Product->add()
+#6 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#7 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp\www\rahulworkspace\codeigniter\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-28 03:24:46 --> Undefined property: CodeIgniter\View\View::$input
+#0 E:\wamp\www\rahulworkspace\codeigniter\app\Views\add_product.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\wamp\\www\\rah...', 25, Array)
+#1 E:\wamp\www\rahulworkspace\codeigniter\system\View\View.php(210): include('E:\\wamp\\www\\rah...')
+#2 E:\wamp\www\rahulworkspace\codeigniter\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\wamp\www\rahulworkspace\codeigniter\system\Common.php(1089): CodeIgniter\View\View->render('add_product', Array, true)
+#4 E:\wamp\www\rahulworkspace\codeigniter\app\Controllers\Product.php(26): view('add_product')
+#5 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(825): App\Controllers\Product->add()
+#6 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#7 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp\www\rahulworkspace\codeigniter\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-28 03:26:11 --> Undefined property: CodeIgniter\View\View::$input
+#0 E:\wamp\www\rahulworkspace\codeigniter\app\Views\add_product.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\wamp\\www\\rah...', 25, Array)
+#1 E:\wamp\www\rahulworkspace\codeigniter\system\View\View.php(210): include('E:\\wamp\\www\\rah...')
+#2 E:\wamp\www\rahulworkspace\codeigniter\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\wamp\www\rahulworkspace\codeigniter\system\Common.php(1089): CodeIgniter\View\View->render('add_product', Array, true)
+#4 E:\wamp\www\rahulworkspace\codeigniter\app\Controllers\Product.php(26): view('add_product')
+#5 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(825): App\Controllers\Product->add()
+#6 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#7 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp\www\rahulworkspace\codeigniter\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-28 03:50:04 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::postMethod()
+#0 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(825): App\Controllers\Product->accept_data()
+#1 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#2 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 E:\wamp\www\rahulworkspace\codeigniter\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-28 03:56:27 --> Argument 3 passed to CodeIgniter\HTTP\Request::fetchGlobal() must be of the type int or null, string given, called in E:\wamp\www\rahulworkspace\codeigniter\system\HTTP\IncomingRequest.php on line 602
+#0 E:\wamp\www\rahulworkspace\codeigniter\system\HTTP\IncomingRequest.php(602): CodeIgniter\HTTP\Request->fetchGlobal('post', 'name', 'price', NULL)
+#1 E:\wamp\www\rahulworkspace\codeigniter\app\Controllers\Product.php(34): CodeIgniter\HTTP\IncomingRequest->getPost('name', 'price')
+#2 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(825): App\Controllers\Product->accept_data()
+#3 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#4 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 E:\wamp\www\rahulworkspace\codeigniter\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-28 04:16:34 --> Allowed fields must be specified for model: App\Models\ProductModel
+#0 E:\wamp\www\rahulworkspace\codeigniter\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Prod...')
+#1 E:\wamp\www\rahulworkspace\codeigniter\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 E:\wamp\www\rahulworkspace\codeigniter\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 E:\wamp\www\rahulworkspace\codeigniter\app\Controllers\Product.php(38): CodeIgniter\Model->insert(Array)
+#4 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(825): App\Controllers\Product->accept_data()
+#5 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\wamp\www\rahulworkspace\codeigniter\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-28 04:20:18 --> Allowed fields must be specified for model: App\Models\ProductModel
+#0 E:\wamp\www\rahulworkspace\codeigniter\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Prod...')
+#1 E:\wamp\www\rahulworkspace\codeigniter\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 E:\wamp\www\rahulworkspace\codeigniter\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 E:\wamp\www\rahulworkspace\codeigniter\app\Controllers\Product.php(40): CodeIgniter\Model->insert(Array)
+#4 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(825): App\Controllers\Product->accept_data()
+#5 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\wamp\www\rahulworkspace\codeigniter\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-28 04:21:15 --> Allowed fields must be specified for model: App\Models\ProductModel
+#0 E:\wamp\www\rahulworkspace\codeigniter\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Prod...')
+#1 E:\wamp\www\rahulworkspace\codeigniter\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 E:\wamp\www\rahulworkspace\codeigniter\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 E:\wamp\www\rahulworkspace\codeigniter\app\Controllers\Product.php(40): CodeIgniter\Model->insert(Array)
+#4 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(825): App\Controllers\Product->accept_data()
+#5 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\wamp\www\rahulworkspace\codeigniter\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-28 04:21:32 --> Allowed fields must be specified for model: App\Models\ProductModel
+#0 E:\wamp\www\rahulworkspace\codeigniter\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Prod...')
+#1 E:\wamp\www\rahulworkspace\codeigniter\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 E:\wamp\www\rahulworkspace\codeigniter\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 E:\wamp\www\rahulworkspace\codeigniter\app\Controllers\Product.php(40): CodeIgniter\Model->insert(Array)
+#4 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(825): App\Controllers\Product->accept_data()
+#5 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\wamp\www\rahulworkspace\codeigniter\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-28 04:30:06 --> Undefined variable: data
+#0 E:\wamp\www\rahulworkspace\codeigniter\app\Controllers\Product.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\wamp\\www\\rah...', 38, Array)
+#1 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(825): App\Controllers\Product->accept_data()
+#2 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#3 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\wamp\www\rahulworkspace\codeigniter\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-28 04:30:15 --> Allowed fields must be specified for model: App\Models\ProductModel
+#0 E:\wamp\www\rahulworkspace\codeigniter\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Prod...')
+#1 E:\wamp\www\rahulworkspace\codeigniter\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 E:\wamp\www\rahulworkspace\codeigniter\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 E:\wamp\www\rahulworkspace\codeigniter\app\Models\ProductModel.php(16): CodeIgniter\Model->insert(Array)
+#4 E:\wamp\www\rahulworkspace\codeigniter\app\Controllers\Product.php(41): App\Models\ProductModel->saveProduct('redmi', '20000', 'elec')
+#5 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(825): App\Controllers\Product->accept_data()
+#6 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#7 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp\www\rahulworkspace\codeigniter\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-28 04:30:52 --> Allowed fields must be specified for model: App\Models\ProductModel
+#0 E:\wamp\www\rahulworkspace\codeigniter\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Prod...')
+#1 E:\wamp\www\rahulworkspace\codeigniter\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 E:\wamp\www\rahulworkspace\codeigniter\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 E:\wamp\www\rahulworkspace\codeigniter\app\Models\ProductModel.php(16): CodeIgniter\Model->insert(Array)
+#4 E:\wamp\www\rahulworkspace\codeigniter\app\Controllers\Product.php(41): App\Models\ProductModel->saveProduct('redmi', '20000', 'elec')
+#5 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(825): App\Controllers\Product->accept_data()
+#6 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#7 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp\www\rahulworkspace\codeigniter\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-28 06:53:50 --> Undefined property: CodeIgniter\View\View::$input
+#0 E:\wamp\www\rahulworkspace\codeigniter\app\Views\list_product.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\wamp\\www\\rah...', 9, Array)
+#1 E:\wamp\www\rahulworkspace\codeigniter\system\View\View.php(210): include('E:\\wamp\\www\\rah...')
+#2 E:\wamp\www\rahulworkspace\codeigniter\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\wamp\www\rahulworkspace\codeigniter\system\Common.php(1089): CodeIgniter\View\View->render('list_product', Array, true)
+#4 E:\wamp\www\rahulworkspace\codeigniter\app\Controllers\Product.php(20): view('list_product', Array)
+#5 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(825): App\Controllers\Product->index()
+#6 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#7 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp\www\rahulworkspace\codeigniter\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-28 07:19:26 --> Undefined property: App\Controllers\Product::$load
+#0 E:\wamp\www\rahulworkspace\codeigniter\app\Controllers\Product.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\wamp\\www\\rah...', 45, Array)
+#1 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(825): App\Controllers\Product->add_action()
+#2 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#3 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\wamp\www\rahulworkspace\codeigniter\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-28 08:29:44 --> Undefined variable: productModel
+#0 E:\wamp\www\rahulworkspace\codeigniter\app\Controllers\Product.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\wamp\\www\\rah...', 48, Array)
+#1 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(825): App\Controllers\Product->view()
+#2 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#3 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\wamp\www\rahulworkspace\codeigniter\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-28 08:31:26 --> Undefined variable: productModel
+#0 E:\wamp\www\rahulworkspace\codeigniter\app\Controllers\Product.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\wamp\\www\\rah...', 48, Array)
+#1 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(825): App\Controllers\Product->view()
+#2 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#3 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\wamp\www\rahulworkspace\codeigniter\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-28 08:31:50 --> Undefined variable: ProductModel
+#0 E:\wamp\www\rahulworkspace\codeigniter\app\Controllers\Product.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\wamp\\www\\rah...', 48, Array)
+#1 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(825): App\Controllers\Product->view()
+#2 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#3 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\wamp\www\rahulworkspace\codeigniter\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-28 08:35:16 --> Undefined variable: ProductModel
+#0 E:\wamp\www\rahulworkspace\codeigniter\app\Controllers\Product.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\wamp\\www\\rah...', 48, Array)
+#1 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(825): App\Controllers\Product->view()
+#2 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#3 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\wamp\www\rahulworkspace\codeigniter\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-28 08:35:31 --> Undefined variable: ProductModel
+#0 E:\wamp\www\rahulworkspace\codeigniter\app\Controllers\Product.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\wamp\\www\\rah...', 48, Array)
+#1 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(825): App\Controllers\Product->view()
+#2 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#3 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\wamp\www\rahulworkspace\codeigniter\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-28 08:42:30 --> Undefined variable: ProductModel
+#0 E:\wamp\www\rahulworkspace\codeigniter\app\Controllers\Product.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\wamp\\www\\rah...', 48, Array)
+#1 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(825): App\Controllers\Product->view()
+#2 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#3 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\wamp\www\rahulworkspace\codeigniter\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-28 10:17:59 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::get()
+#0 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(825): App\Controllers\Product->view('1')
+#1 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#2 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 E:\wamp\www\rahulworkspace\codeigniter\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-28 10:32:42 --> Undefined variable: products
+#0 E:\wamp\www\rahulworkspace\codeigniter\app\Controllers\Product.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\wamp\\www\\rah...', 56, Array)
+#1 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(825): App\Controllers\Product->view('5')
+#2 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#3 E:\wamp\www\rahulworkspace\codeigniter\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\wamp\www\rahulworkspace\codeigniter\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

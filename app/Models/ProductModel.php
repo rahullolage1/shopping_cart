@@ -20,6 +20,7 @@ class ProductModel extends Model
     public function getProduct($id) {
         return $this->find($id);
     }
+    
 
 
 }

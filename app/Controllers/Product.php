@@ -50,14 +50,37 @@ class Product extends BaseController
         // print_r($id);
         $model = new ProductModel();
         $result = $model->getProduct($id);
-        
+
+         
 
         $data = array(
-            'result' => $result
+            'result' => $result,
+            'id' => $id
         );
 
         echo view('templates/header');
         echo view('view_product', $data);
+        echo view('templates/footer');
+        
+    }
+
+    public function edit($id){
+        // $id = $this->request->get('id', true);
+
+        // print_r($id);
+        $model = new ProductModel();
+        $result = $model->getProduct($id);
+         
+
+        $data = array(
+            'result' => $result,
+            'id' => $id
+        );
+
+        
+
+        echo view('templates/header');
+        echo view('edit_product', $data);
         echo view('templates/footer');
         
     }

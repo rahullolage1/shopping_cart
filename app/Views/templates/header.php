@@ -49,6 +49,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="<?php echo base_url() ?>/home">Home</a></li>
         <li><a href="<?php echo base_url() ?>/product">Products</a></li>
+        <li><a href="<?php echo base_url() ?>/category">Categories</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">Contact</a></li>
       </ul>

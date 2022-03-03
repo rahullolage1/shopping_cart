@@ -95,12 +95,12 @@ class Product extends BaseController
            'price' => $price,
            'category' => $category
        ];
+
         
        // data fetch from model so create new object and call from model function
 
        $model = new ProductModel();
-
-
-        // return redirect()->to('product');
+       $result = $model->editProduct($id, $data);
+       return redirect()->to('product');
     }
 }   

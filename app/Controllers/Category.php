@@ -81,4 +81,12 @@ class Category extends BaseController
         $result = $model->editCategory($id, $data);
         return redirect()->to('category');
     }
+
+    public function delete_action($id){
+        
+        $model = new CategoryModel();
+        $result = $model->deleteCategory($id);
+        print_r($result);
+        return redirect()->to('category');
+    }
 }

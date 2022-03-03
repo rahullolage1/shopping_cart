@@ -95,12 +95,19 @@ class Product extends BaseController
            'price' => $price,
            'category' => $category
        ];
-
-        
        // data fetch from model so create new object and call from model function
+       // URL Path in view--- Controller -> Method -> Parameter
 
-       $model = new ProductModel();
-       $result = $model->editProduct($id, $data);
-       return redirect()->to('product');
+        $model = new ProductModel();
+        $result = $model->editProduct($id, $data);
+        return redirect()->to('product');
+    }
+
+    public function delete_action($id){
+        
+        $model = new ProductModel();
+        $result = $model->deleteProduct($id);
+        print_r($result);
+        return redirect()->to('product');
     }
 }   

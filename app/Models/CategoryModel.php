@@ -29,4 +29,9 @@ class CategoryModel extends Model
         ->set($data)
         ->update();
     }
+
+    public function deleteCategory($id) {
+        // Delete
+        return $this->where('id', $id)->delete();
+    }
 }

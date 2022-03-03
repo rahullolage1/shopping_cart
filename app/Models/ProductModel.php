@@ -27,8 +27,12 @@ class ProductModel extends Model
         ->set($data)
         ->update();
     }    
-
-
+    
+    
+    public function deleteProduct($id) {
+        // Delete
+        return $this->where('id', $id)->delete();
+    }    
     
     
 

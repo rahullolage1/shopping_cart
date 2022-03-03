@@ -20,6 +20,16 @@ class ProductModel extends Model
     public function getProduct($id) {
         return $this->find($id);
     }
+
+    public function editProduct($id, $data) {
+        // UPDATE
+        return $this->where('id', $id)
+        ->set($data)
+        ->update();
+    }    
+
+
+    
     
 
 

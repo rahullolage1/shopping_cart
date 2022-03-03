@@ -70,18 +70,37 @@ class Product extends BaseController
         // print_r($id);
         $model = new ProductModel();
         $result = $model->getProduct($id);
-         
+        
 
         $data = array(
             'result' => $result,
             'id' => $id
         );
 
-        
 
         echo view('templates/header');
         echo view('edit_product', $data);
         echo view('templates/footer');
         
+    }
+
+    public function edit_action($id){
+
+        $name = $this->request->getPOST('name');
+        $price = $this->request->getPOST('price');
+        $category = $this->request->getPOST('category');
+
+        $data = [
+           'name' => $name,
+           'price' => $price,
+           'category' => $category
+       ];
+        
+       // data fetch from model so create new object and call from model function
+
+       $model = new ProductModel();
+
+
+        // return redirect()->to('product');
     }
 }   

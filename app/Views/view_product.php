@@ -3,7 +3,7 @@ print_r($id);
 ?> -->
 
 <div class="container text-center"><br>
-  <a class="btn btn-primary" href="<?php echo base_url('product/view/edit/' . $id)?>" role="button">Edit</a>
+  <a class="btn btn-primary" href="<?php echo base_url('product/edit/' . $id)?>" role="button">Edit</a>
     <div class="row">
       <div class="col-sm-12">
         <h3><?php echo $result['name'] ?></h3>

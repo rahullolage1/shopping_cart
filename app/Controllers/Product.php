@@ -110,4 +110,5 @@ class Product extends BaseController
         print_r($result);
         return redirect()->to('product');
     }
+
 }   

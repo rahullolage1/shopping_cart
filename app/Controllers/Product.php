@@ -21,22 +21,39 @@ class Product extends BaseController
         echo view('templates/footer');
     }
 
-    public function add() {
+    public function add($err = '') {
+
+
         echo view('templates/header');
-        echo view('add_product');
+        echo view('add_product', ['err' => $err]);
         echo view('templates/footer');
+
+        
     }
 
     public function add_action(){
         // print_r($this->request->getMethod());
+        $model = new ProductModel();
+        $name = $this->request->getVar('name');
+        $price = $this->request->getVar('price');
 
-       $data =['name' => $this->request->getVar('name'),
-               'price' => $this->request->getVar('price'),
+        if(!$name) {
+            return redirect()->to('product/add/err');
+        }
+
+        // fetch record from DB
+        $isExists = $model->checkProductExists($name);
+        if($isExists) {
+            return redirect()->to('product/add/exists');
+        }
+
+       $data =['name' => $name,
+               'price' => $price,
                'category' => $this->request->getVar('category')];
             
         // print_r($data);
 
-        $model = new ProductModel();
+        
         $model->insert($data);
         // $productModel = new ProductModel();
         // $result = $productModel->saveProduct($name, $price, $category);

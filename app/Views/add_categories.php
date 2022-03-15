@@ -13,5 +13,13 @@
     </div>
   </div>
   <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+  <?php
+  if($err == 'exists') {
+      echo "category already exist";
+    } else if($err) {
+    
+    echo "name and description is required";
+  }
+  ?>
 </form>
 

@@ -20,5 +20,12 @@
     </div>
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
+  <br/>
+  <?php
+  if($err == 'exists') {
+      echo "Product already exist";
+    } else if($err) {
+      echo "Product name, price and category is required";
+  } ?>
 </form>
 

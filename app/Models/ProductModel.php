@@ -11,12 +11,21 @@ class ProductModel extends Model
 
     
     public function getAllProducts() {
-        return $this->findAll();
+        // return $this->orderBy('id', 'desc')->findAll();
+        $sql="Select * from products where 1 order by id desc";
+        $query = $this->db->query($sql);
+        return $query->getResultArray();
     }
     
     // public function saveProduct($name, $price, $category) {
         //     return $this->insert(array('name' => $name, 'price' => $price, 'category'=>$category));
         // }
+    public function checkProductExists($name) {
+        $sql="Select * from products where name='$name'";
+        $query = $this->db->query($sql);
+        return $query->getResultArray();
+    }
+    
     public function getProduct($id) {
         return $this->find($id);
     }

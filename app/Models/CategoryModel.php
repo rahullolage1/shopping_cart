@@ -10,7 +10,15 @@ class CategoryModel extends Model
     protected $allowedFields = ['name', 'description'];
 
     public function getAllCategories() {
-        return $this->findAll();
+        $sql="Select * from category where 1 order by id desc";
+        $query = $this->db->query($sql);
+        return $query->getResultArray();
+    }
+
+    public function checkProductExists($name) {
+        $sql="Select * from category where name='$name'";
+        $query = $this->db->query($sql);
+        return $query->getResultArray();
     }
 
     public function getCategory($id) {

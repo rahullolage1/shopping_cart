@@ -42,6 +42,9 @@ class Category extends BaseController
             return redirect()->to('category/add/exists');
         }
 
+        $data = ['name'=> $name,
+                 'description'=>$description];
+
         $model->addCategory($data);
         return redirect()->to('category');
     }

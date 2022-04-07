@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shopping Cart</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   
     <style>
@@ -55,9 +55,10 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="<?php echo base_url() ?>/login"><span class="glyphicon glyphicon-log-in"></span> Sign-up</a></li>
-        <li><a href="<?php echo base_url() ?>/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="<?php echo base_url() ?>/login/loginpage"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
   </div>
 </nav>
+
 

@@ -9,8 +9,10 @@ class LoginModel extends Model
     protected $table      = 'login';
     protected $allowedFields = ['name', 'email', 'password'];
 
-    // public function saveUser($name, $email, $password){
-    //     return $this->insert($data);
+    // public function checkLogin($email,$password) {
+    //     $sql="Select id, name, email from login where email='$email' AND password='$password'";
+    //     $query = $this->db->query($sql);
+    //     return $query->getRowArray();
     // }
     
 

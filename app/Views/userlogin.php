@@ -3,15 +3,11 @@
     <div class="col-md-4 col-md-offset-4">
     <h2 class="text-primary text-center">Login Page</h2>
     <hr />
-    <form method="post" action="<?php echo base_url('login/login_action') ?>">
-    <?= csrf_field(); ?>
-      <!-- <?php if(!empty(session()->getFlashdata('fail'))) : ?>
-      <div class="alert alert-danger"><?= session()->getFlashdata('fail'); ?></div>
-      <?php endif ?>
+    <form method="post" action="<?php echo base_url('login/auth') ?>">
     
-      <?php if(!empty(session()->getFlashdata('success'))) : ?>
-      <div class="alert alert-success"><?= session()->getFlashdata('success'); ?></div>
-      <?php endif ?> -->
+      <?php if(session()->getFlashdata('msg')) : ?>
+      <div class="alert alert-danger"><?= session()->getFlashdata('msg'); ?></div>
+      <?php endif ?>
      
       <div class="form-group">
         <label>Email</label>

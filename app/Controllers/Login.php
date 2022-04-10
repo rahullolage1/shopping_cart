@@ -57,12 +57,12 @@ class Login extends BaseController
             // insert data into database
             $name = $this->request->getVar('name');
             $email = $this->request->getVar('email');
-            $password = $this->request->getVar('password');
+            $password = password_hash($this->request->getVar('password'), PASSWORD_DEFAULT);
 
             $data=[
                 'name'=>$name,
                 'email'=>$email,
-                'password'=>md5($password)
+                'password'=>$password
             ];
 
             $model = new LoginModel();
@@ -82,15 +82,15 @@ class Login extends BaseController
         echo view('userlogin');
     }
     
-    
-    public function login_action(){
+
+        public function auth(){
+        
         $validation = $this->validate([
             'email'=>[
-                'rules'=>'required|valid_email|is_not_unique[login.email]',
+                'rules'=>'required|valid_email',
                 'errors'=>[
                     'required'=>'Email is required',
                     'valid_email'=>'Enter a valid email',
-                    'is_not_unique'=>'This email is not registered',
                 ]
                 ],
             'password'=>[
@@ -105,9 +105,50 @@ class Login extends BaseController
         if(!$validation){
             echo view('templates/header');
             echo view('userlogin', ['validation'=>$this->validator]);
-        }else{
-            echo "success";
 
-        }
+        }else{
+
+            $session = session();
+            $model = new LoginModel();
+        
+            $email = $this->request->getVar('email');
+            $password = $this->request->getVar('password');
+
+            $data = $model->where('email', $email)->first();
+
+            if($data){
+                $pass = $data['password'];
+                $verify_pass = password_verify($password, $pass);
+                if($verify_pass){
+                    $session_data = [
+                        'id'       => $data['id'],
+                        'name'     => $data['name'],
+                        'email'    => $data['email'],
+                        'logged_in'     => TRUE
+                    ];
+
+                    $session->set($session_data);
+                    return redirect()->to('/dashboard');
+                }else{
+                    $session->setFlashdata('msg', 'Wrong Password');
+                    return redirect()->to('/login/loginpage');
+                }
+            }else{
+                $session->setFlashdata('msg', 'This email is not registered');
+                return redirect()->to('/login');
+            }
+            }
+
+            }
+
+    public function logout()
+    {
+        $session = session();
+        $session->destroy();
+        return redirect()->to('/login/loginpage');
     }
+
+
+
+
 }

@@ -6,7 +6,9 @@ class Dashboard extends BaseController
 {
     public function index()
     {
-        // echo "Welcome to dashboard";
+        if(!session()->has('logged_in')){
+            return redirect()->to('/login/loginpage');
+        }
         echo view('templates/header');
         echo view('dashboard');
     }

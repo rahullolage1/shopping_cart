@@ -60,6 +60,7 @@
       </ul>
       <?php }else{  ?>
         <ul class="nav navbar-nav navbar-right">
+        <li><a href="<?php echo base_url() ?>/UserProfile"></span> Profile</a></li>
         <li><a href="<?php echo base_url() ?>/login/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
         </ul>
         <?php } ?>

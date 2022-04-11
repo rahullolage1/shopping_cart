@@ -30,7 +30,7 @@
           name="password"
           id="password"
           class="form-control"
-          value=""
+          value="<?= set_value('password'); ?>"
           
         />
         <span class="text-danger"><?= isset($validation) ? display_error($validation, 'password') : '' ?></span>

@@ -71,7 +71,7 @@ class Login extends BaseController
             if(!$query){
                 return redirect()->back()->with('fail', 'Something went wrong');
             }else{
-                return redirect()->to('login')->with('success', 'Registration successful');
+                return redirect()->to('login/loginpage')->with('success', 'Registration successful');
             }
         }
     }    

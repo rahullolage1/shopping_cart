@@ -1,9 +1,13 @@
 <div class="container">
-  <div class="row" style="margin-top:25px">
+  <div class="row" style="margin-top:20px">
     <div class="col-md-4 col-md-offset-4">
     <h2 class="text-primary text-center">Login Page</h2>
     <hr />
     <form method="post" action="<?php echo base_url('login/auth') ?>">
+
+      <?php if(!empty(session()->getFlashdata('success'))) : ?>
+      <div class="alert alert-success"><?= session()->getFlashdata('success'); ?></div>
+      <?php endif ?>
     
       <?php if(session()->getFlashdata('msg')) : ?>
       <div class="alert alert-danger"><?= session()->getFlashdata('msg'); ?></div>

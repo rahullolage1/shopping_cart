@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="row" style="margin-top:25px">
+  <div class="row" style="margin-top:20px">
     <div class="col-md-4 col-md-offset-4">
     <h2 class="text-primary text-center">Registration Page</h2>
     <hr />
@@ -8,10 +8,7 @@
       <?php if(!empty(session()->getFlashdata('fail'))) : ?>
       <div class="alert alert-danger"><?= session()->getFlashdata('fail'); ?></div>
       <?php endif ?>
-    
-      <?php if(!empty(session()->getFlashdata('success'))) : ?>
-      <div class="alert alert-success"><?= session()->getFlashdata('success'); ?></div>
-      <?php endif ?>
+      
       <div class="form-group">
         <label>Name</label>
         <input type="text" name="name" class="form-control" value="<?= set_value('name'); ?>"/>
